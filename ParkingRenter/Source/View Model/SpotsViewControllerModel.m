@@ -7,11 +7,18 @@
 //
 
 #import "SpotsViewControllerModel.h"
+#import "SpotModel.h"
 
 @implementation SpotsViewControllerModel
 
 -(void)fetchSpots {
-    self.spots = [NSArray array];
+    SpotModel *spotA = [[SpotModel alloc] init];
+    SpotModel *spotB = [[SpotModel alloc] init];
+    
+    spotA.name = @"Spot A";
+    spotB.name = @"Spot B";
+
+    self.spots = @[spotA, spotB];
 }
 
 @end

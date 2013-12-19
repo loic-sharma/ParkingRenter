@@ -24,6 +24,8 @@
 		40269C3B1863692500C91BE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40269C391863692500C91BE9 /* InfoPlist.strings */; };
 		40269C3E18636ECD00C91BE9 /* SpotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40269C3D18636ECD00C91BE9 /* SpotsViewController.m */; };
 		40269C421863769C00C91BE9 /* SpotsViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40269C411863769C00C91BE9 /* SpotsViewControllerModel.m */; };
+		405136D518637F60006F41C8 /* SpotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 405136D418637F60006F41C8 /* SpotModel.m */; };
+		405136D81863805E006F41C8 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 405136D71863805E006F41C8 /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		40269C3D18636ECD00C91BE9 /* SpotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotsViewController.m; sourceTree = "<group>"; };
 		40269C401863769C00C91BE9 /* SpotsViewControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotsViewControllerModel.h; sourceTree = "<group>"; };
 		40269C411863769C00C91BE9 /* SpotsViewControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotsViewControllerModel.m; sourceTree = "<group>"; };
+		405136D318637F60006F41C8 /* SpotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotModel.h; sourceTree = "<group>"; };
+		405136D418637F60006F41C8 /* SpotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotModel.m; sourceTree = "<group>"; };
+		405136D61863805E006F41C8 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		405136D71863805E006F41C8 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		4DDB0D8FA5DC43288241194C /* libPods-ParkingRenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParkingRenter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DA28C7C59E42EEA3C80988 /* Pods-ParkingRenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingRenter.xcconfig"; path = "Pods/Pods-ParkingRenter.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				40269C0F186366F900C91BE9 /* Misc */,
+				405136D218637F2B006F41C8 /* Model */,
 				40269C101863670100C91BE9 /* View Model */,
 				40269C111863670800C91BE9 /* View */,
 			);
@@ -238,6 +245,17 @@
 				40269C391863692500C91BE9 /* InfoPlist.strings */,
 			);
 			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		405136D218637F2B006F41C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				405136D318637F60006F41C8 /* SpotModel.h */,
+				405136D418637F60006F41C8 /* SpotModel.m */,
+				405136D61863805E006F41C8 /* UserModel.h */,
+				405136D71863805E006F41C8 /* UserModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,9 +392,11 @@
 			files = (
 				40269C3E18636ECD00C91BE9 /* SpotsViewController.m in Sources */,
 				40269C31186368E100C91BE9 /* ViewController.m in Sources */,
+				405136D81863805E006F41C8 /* UserModel.m in Sources */,
 				40269C2B1863689F00C91BE9 /* main.m in Sources */,
 				40269C2E186368AC00C91BE9 /* AppDelegate.m in Sources */,
 				40269C421863769C00C91BE9 /* SpotsViewControllerModel.m in Sources */,
+				405136D518637F60006F41C8 /* SpotModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
