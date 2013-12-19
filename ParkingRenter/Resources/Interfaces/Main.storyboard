@@ -63,10 +63,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="k0Y-RJ-35F"/>
+                    <connections>
+                        <segue destination="Dcc-Gv-sZS" kind="push" identifier="SegueViewStop" id="jKp-nr-8Z1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhp-KQ-02z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="906" y="23"/>
+        </scene>
+        <!--Spot View Controller-->
+        <scene sceneID="Pbf-BB-NZN">
+            <objects>
+                <viewController id="Dcc-Gv-sZS" customClass="SpotViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C90-VG-xqX"/>
+                        <viewControllerLayoutGuide type="bottom" id="G3f-qa-ac6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LPt-Az-VWI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2u3-qQ-wXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="23"/>
         </scene>
         <!--View Controller - Rent-->
         <scene sceneID="8Hp-jX-XzS">

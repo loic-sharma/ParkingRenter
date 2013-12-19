@@ -26,6 +26,7 @@
 		40269C421863769C00C91BE9 /* SpotsViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40269C411863769C00C91BE9 /* SpotsViewControllerModel.m */; };
 		405136D518637F60006F41C8 /* SpotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 405136D418637F60006F41C8 /* SpotModel.m */; };
 		405136D81863805E006F41C8 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 405136D71863805E006F41C8 /* UserModel.m */; };
+		405136DD18638ADB006F41C8 /* SpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 405136DC18638ADB006F41C8 /* SpotViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,9 @@
 		405136D418637F60006F41C8 /* SpotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotModel.m; sourceTree = "<group>"; };
 		405136D61863805E006F41C8 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		405136D71863805E006F41C8 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		405136DA18638A6A006F41C8 /* SegueIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueIdentifiers.h; sourceTree = "<group>"; };
+		405136DB18638ADB006F41C8 /* SpotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotViewController.h; sourceTree = "<group>"; };
+		405136DC18638ADB006F41C8 /* SpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotViewController.m; sourceTree = "<group>"; };
 		4DDB0D8FA5DC43288241194C /* libPods-ParkingRenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParkingRenter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DA28C7C59E42EEA3C80988 /* Pods-ParkingRenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingRenter.xcconfig"; path = "Pods/Pods-ParkingRenter.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +185,7 @@
 				40269C121863672300C91BE9 /* App Delegate */,
 				40269C291863689F00C91BE9 /* main.m */,
 				40269C2A1863689F00C91BE9 /* ParkingRenter-Prefix.pch */,
+				405136DA18638A6A006F41C8 /* SegueIdentifiers.h */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -201,6 +206,8 @@
 				40269C30186368E100C91BE9 /* ViewController.m */,
 				40269C3C18636ECD00C91BE9 /* SpotsViewController.h */,
 				40269C3D18636ECD00C91BE9 /* SpotsViewController.m */,
+				405136DB18638ADB006F41C8 /* SpotViewController.h */,
+				405136DC18638ADB006F41C8 /* SpotViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -394,6 +401,7 @@
 				40269C31186368E100C91BE9 /* ViewController.m in Sources */,
 				405136D81863805E006F41C8 /* UserModel.m in Sources */,
 				40269C2B1863689F00C91BE9 /* main.m in Sources */,
+				405136DD18638ADB006F41C8 /* SpotViewController.m in Sources */,
 				40269C2E186368AC00C91BE9 /* AppDelegate.m in Sources */,
 				40269C421863769C00C91BE9 /* SpotsViewControllerModel.m in Sources */,
 				405136D518637F60006F41C8 /* SpotModel.m in Sources */,

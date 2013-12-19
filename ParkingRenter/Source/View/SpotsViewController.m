@@ -8,6 +8,7 @@
 
 #import "SpotsViewController.h"
 #import "SpotsViewControllerModel.h"
+#import "SpotViewController.h"
 #import "SpotModel.h"
 
 @interface SpotsViewController ()
@@ -67,5 +68,23 @@
     
     return cell;
 }
+
+#pragma UITableView view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:SegueViewStop sender:self];
+}
+
+#pragma UIStoryboard
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqual:SegueViewStop]) {
+        SpotViewController *controller = (SpotViewController *)segue.destinationViewController;
+        SpotModel *spot = self.model.spots[[self.tableView indexPathForSelectedRow].row];
+
+        controller.model = spot;
+    }
+}
+
 
 @end
