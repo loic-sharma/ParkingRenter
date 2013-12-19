@@ -22,6 +22,8 @@
 		40269C33186368F600C91BE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40269C32186368F600C91BE9 /* Images.xcassets */; };
 		40269C35186368FF00C91BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40269C34186368FF00C91BE9 /* Main.storyboard */; };
 		40269C3B1863692500C91BE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40269C391863692500C91BE9 /* InfoPlist.strings */; };
+		40269C3E18636ECD00C91BE9 /* SpotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40269C3D18636ECD00C91BE9 /* SpotsViewController.m */; };
+		40269C421863769C00C91BE9 /* SpotsViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40269C411863769C00C91BE9 /* SpotsViewControllerModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		40269C34186368FF00C91BE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		40269C361863691600C91BE9 /* ParkingRenter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ParkingRenter-Info.plist"; sourceTree = "<group>"; };
 		40269C3A1863692500C91BE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		40269C3C18636ECD00C91BE9 /* SpotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotsViewController.h; sourceTree = "<group>"; };
+		40269C3D18636ECD00C91BE9 /* SpotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotsViewController.m; sourceTree = "<group>"; };
+		40269C401863769C00C91BE9 /* SpotsViewControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotsViewControllerModel.h; sourceTree = "<group>"; };
+		40269C411863769C00C91BE9 /* SpotsViewControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotsViewControllerModel.m; sourceTree = "<group>"; };
 		4DDB0D8FA5DC43288241194C /* libPods-ParkingRenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParkingRenter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DA28C7C59E42EEA3C80988 /* Pods-ParkingRenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingRenter.xcconfig"; path = "Pods/Pods-ParkingRenter.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				40269C0F186366F900C91BE9 /* Misc */,
-				40269C101863670100C91BE9 /* Model */,
+				40269C101863670100C91BE9 /* View Model */,
 				40269C111863670800C91BE9 /* View */,
 			);
 			path = Source;
@@ -172,11 +178,13 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
-		40269C101863670100C91BE9 /* Model */ = {
+		40269C101863670100C91BE9 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				40269C401863769C00C91BE9 /* SpotsViewControllerModel.h */,
+				40269C411863769C00C91BE9 /* SpotsViewControllerModel.m */,
 			);
-			path = Model;
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		40269C111863670800C91BE9 /* View */ = {
@@ -184,6 +192,8 @@
 			children = (
 				40269C2F186368E100C91BE9 /* ViewController.h */,
 				40269C30186368E100C91BE9 /* ViewController.m */,
+				40269C3C18636ECD00C91BE9 /* SpotsViewController.h */,
+				40269C3D18636ECD00C91BE9 /* SpotsViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,9 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40269C3E18636ECD00C91BE9 /* SpotsViewController.m in Sources */,
 				40269C31186368E100C91BE9 /* ViewController.m in Sources */,
 				40269C2B1863689F00C91BE9 /* main.m in Sources */,
 				40269C2E186368AC00C91BE9 /* AppDelegate.m in Sources */,
+				40269C421863769C00C91BE9 /* SpotsViewControllerModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
